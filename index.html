@@ -10,23 +10,23 @@
   <body>
 
     <div class="keys" id="keys1">
-      <div class="key" data-key="65" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="65" onkeyup="danceMonkeyDance();">
         <kbd>A</kbd>
         <span class="sound">808</span>
       </div>
-      <div class="key" data-key="83" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="83" onkeyup="danceMonkeyDance();">
         <kbd>S</kbd>
         <span class="sound">Snare</span>
       </div>
-      <div class="key" data-key="68" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="68" onkeyup="danceMonkeyDance();">
         <kbd>D</kbd>
         <span class="sound">Hat</span>
       </div>
-      <div class="key" data-key="70" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="70" onkeyup="danceMonkeyDance();">
         <kbd>F</kbd>
         <span class="sound">Kick</span>
       </div>
-      <div class="key" data-key="71" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="71" onkeyup="danceMonkeyDance();">
         <kbd>G</kbd>
         <span class="sound">Sweep</span>
       </div>
@@ -39,19 +39,19 @@
 
 
     <div class="keys" id="keys2">
-      <div class="key" data-key="72" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="72" onkeyup="danceMonkeyDance();">
         <kbd>H</kbd>
         <span class="sound">What</span>
       </div>
-      <div class="key" data-key="74" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="74" onkeyup="danceMonkeyDance();">
         <kbd>J</kbd>
         <span class="sound">O Hat</span>
       </div>
-      <div class="key" data-key="75" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="75" onkeyup="danceMonkeyDance();">
         <kbd>K</kbd>
         <span class="sound">Orch</span>
       </div>
-      <div class="key" data-key="76" onkeyup="danceMonkeyDance()">
+      <div class="key" data-key="76" onkeyup="danceMonkeyDance();">
         <kbd>L</kbd>
         <span class="sound">clap</span>
       </div>
@@ -92,36 +92,81 @@
 
 
 // ------------------------Animation--------------------------------
+document.body.addEventListener("keyup", danceMonkey);
+var numberOfTimesRun = 0;
+function danceMonkey() {
 
-  function danceMonkeyDance() {
-      var numberOfTimesRun =0;
+
+
     if (numberOfTimesRun === 0) {
-      var imageChange = document.getElementById("danceImageOverlay").src = "./danceimg/image_part_001.jpg";
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_001.jpg";
       numberOfTimesRun += 1;
-      console.log("numberOfTimesRun: ", numberOfTimesRun);
+      console.log("one");
+      console.log(numberOfTimesRun);
     }
-    else if (numberOfTimesRun === 1){
-    document.getElementById("danceImageOverlay").src = "./danceimg/image_part_002.jpg";
-    numberOfTimesRun +=1;
-    console.log("numberOfTimesRun: ", numberOfTimesRun);
+    else if (numberOfTimesRun === 1) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_002.jpg";
+      numberOfTimesRun += 1;
     }
     else if (numberOfTimesRun === 2) {
-      document.getElementById("danceImageOverlay").src = "./danceimg/image_part_003.jpg";
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_003.jpg";
       numberOfTimesRun += 1;
-      console.log("numberOfTimesRun: ", numberOfTimesRun);
     }
     else if (numberOfTimesRun === 3) {
-      document.getElementById("danceImageOverlay").src = "./danceimg/image_part_004.jpg";
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_004.jpg";
       numberOfTimesRun += 1;
-      console.log("numberOfTimesRun: ", numberOfTimesRun);
     }
     else if (numberOfTimesRun === 4) {
-      document.getElementById("danceImageOverlay").src = "./danceimg/image_part_005.jpg";
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_005.jpg";
       numberOfTimesRun += 1;
-      console.log("numberOfTimesRun: ", numberOfTimesRun);
     }
-    console.log(imageChange);
-    return imageChange;
+    else if (numberOfTimesRun === 5) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_006.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 6) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_007.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 7) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_008.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 8) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_009.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 9) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_010.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 10) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_011.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 11) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_012.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 12) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_013.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 13) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_014.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 14) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_015.jpg";
+      numberOfTimesRun += 1;
+    }
+    else if (numberOfTimesRun === 15) {
+       document.getElementById("danceImageOverlay").src = "./danceimg/image_part_016.jpg";
+      numberOfTimesRun = 0;
+    }
+
+
+
   }
 
   // ------------------------Animation--------------------------------
